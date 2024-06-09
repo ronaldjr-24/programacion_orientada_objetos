@@ -19,7 +19,7 @@ class Vehiculo(ABC):
         return f"Marca: {self._marca}, Modelo: {self._modelo}"
 
 
-# Herencia: La clase Coche hereda de Vehiculo
+# Encapulacion: La clase Coche hereda de Vehiculo
 class Coche(Vehiculo):
     def __init__(self, marca, modelo, puertas):
         super().__init__(marca, modelo)
