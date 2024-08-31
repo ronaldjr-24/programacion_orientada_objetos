@@ -1,0 +1,14 @@
+[
+    {
+        "id_producto": "001",
+        "nombre": "manzana",
+        "cantidad": 30,
+        "precio": 2.0
+    },
+    {
+        "id_producto": "12",
+        "nombre": "limon",
+        "cantidad": 20,
+        "precio": 1.0
+    }
+]
