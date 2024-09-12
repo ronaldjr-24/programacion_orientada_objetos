@@ -31,7 +31,7 @@ ventana = tk.Tk()
 ventana.title("Sistema de Gestión de Datos de Usuarios")
 
 # Tamaño de la ventana
-ventana.geometry("800x400")
+ventana.geometry("800x500")
 
 # Etiqueta para el nombre
 etiqueta_nombre = tk.Label(ventana, text="Nombre:")
@@ -57,6 +57,11 @@ boton_agregar.pack(pady=10)
 tabla = ttk.Treeview(ventana, columns=("Nombre", "Edad"), show="headings", height=8)
 tabla.heading("Nombre", text="Nombre")
 tabla.heading("Edad", text="Edad")
+
+# Configurar la alineación de las columnas
+tabla.column("Nombre", anchor=tk.CENTER, width=200)
+tabla.column("Edad", anchor=tk.CENTER, width=100)
+
 tabla.pack(pady=10)
 
 # Botón para limpiar la tabla
